@@ -12,10 +12,10 @@ function App() {
                     <div id="home">
                         <Home/>
                     </div>
+                    <div id="dishes">
+                        <Dishes/>
+                    </div>
                 </main>
-            </div>
-            <div id="dishes">
-                <Dishes/>
             </div>
         </>
     )
