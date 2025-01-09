@@ -30,8 +30,14 @@ const Contact = () => {
 
     return (
         <>
+
             <div className="m-12">
-                <form className="md:max-w-lg lg:max-w-3xl mx-auto p-4 border rounded-lg shadow-md" onSubmit={handleSubmit}>
+                <div className="text-center mb-8">
+                    <h2 className="text-3xl font-bold text-gray-800 mb-2">Contact-Us</h2>
+                    <p className="text-gray-600">Explore our carefully crafted dishes, made with love and the finest
+                        ingredients.</p>
+                </div>
+                <form className="md:max-w-2xl lg:max-w-3xl mx-auto p-4 border rounded-lg shadow-md" onSubmit={handleSubmit}>
                     <Input
                         id="name"
                         name="name"

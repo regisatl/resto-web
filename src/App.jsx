@@ -7,6 +7,9 @@ import Menu from "./components/Menu.jsx";
 import Reviews from "./components/Reviews.jsx";
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
     return (

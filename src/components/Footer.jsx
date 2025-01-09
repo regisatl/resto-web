@@ -1,5 +1,6 @@
 import React from "react";
 import {FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import {Link} from "react-scroll";
 
 const Footer = () => {
     return (
@@ -19,10 +20,10 @@ const Footer = () => {
                     <div className="flex-1">
                         <h3 className="text-2xl font-bold mb-4">Useful Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="#home" className="hover:text-gray-300">Home</a></li>
-                            <li><a href="#menu" className="hover:text-gray-300">Menu</a></li>
-                            <li><a href="#about" className="hover:text-gray-300">About Us</a></li>
-                            <li><a href="#contact" className="hover:text-gray-300">Contact</a></li>
+                            <li><Link to="home" spy={true} smooth={true} duration={2000} className="hover:text-brightColor cursor-pointer transition-all durantion-300 hover:border-b-2 border-brightColor">Home</Link></li>
+                            <li><Link to="menu" spy={true} smooth={true} duration={2000} className="hover:text-brightColor cursor-pointer transition-all durantion-300 hover:border-b-2 border-brightColor">Menu</Link></li>
+                            <li><Link to="about" spy={true} smooth={true} duration={2000} className="hover:text-brightColor cursor-pointer transition-all durantion-300 hover:border-b-2 border-brightColor">About Us</Link></li>
+                            <li><Link to="contact" spy={true} smooth={true} duration={2000} className="hover:text-brightColor cursor-pointer transition-all durantion-300 hover:border-b-2 border-brightColor">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -39,16 +40,16 @@ const Footer = () => {
                 <div className="mt-10 border-t border-gray-700 pt-5 text-center">
                     <h3 className="text-lg font-bold mb-4">Follow Us</h3>
                     <div className="flex justify-center gap-4">
-                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-brightColor transition-all duration-700">
                             <FaFacebookF/>
                         </a>
-                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-brightColor transition-all duration-700">
                             <FaTwitter/>
                         </a>
-                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-brightColor transition-all duration-700">
                             <FaInstagram/>
                         </a>
-                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-gray-700">
+                        <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-brightColor transition-all duration-700">
                             <FaLinkedinIn/>
                         </a>
                     </div>

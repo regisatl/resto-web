@@ -1,16 +1,12 @@
 import React from 'react';
 import img from '../assets/images/img8.jpg';
 import Button from "../layouts/Button.jsx";
+import '../App.css';
 
 const About = () => {
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-8">
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-8 about-image">
             <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
-                <img
-                    src={img}
-                    alt="Why Choose Us"
-                    className="w-full h-64 object-cover"
-                />
                 <div className="p-6">
                     <h2 className="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
                     <p className="text-gray-600 leading-relaxed mb-4">

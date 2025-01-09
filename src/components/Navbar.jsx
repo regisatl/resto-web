@@ -89,7 +89,7 @@ const Navbar = () => {
                                   className="hover:text-brightColor transition-all duration-300 cursor-pointer">Menu</Link>
                             <Link to="reviews" spy={true} smooth={true} duration={2000}
                                   className="hover:text-brightColor transition-all duration-300 cursor-pointer">Reviews</Link>
-                            <Button id="contact" title="Contactez-nous"/>
+                            <ButtonContact title="Contactez-nous"/>
                         </nav>
                         <div className="md:hidden flex items-center z-20 text-brightColor">
                             {menu ? (<AiOutlineClose size={25} onClick={handleChange}/>) : (
@@ -109,16 +109,16 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             duration={2000}
-                            className="hover:text-brightColor transition-all duration-300 cursor-pointer"
+                            className="hover:bg-brightColor text-brightColor hover:text-white py-2 px-3 rounded transition-all duration-300 cursor-pointer"
                         >
                             Dishes
                         </Link>
                         <Link to="about" spy={true} smooth={true} duration={2000}
-                              className="hover:text-brightColor transition-all duration-300 cursor-pointer">About</Link>
+                              className="hover:bg-brightColor text-brightColor hover:text-white py-2 px-3 rounded transition-all duration-300 cursor-pointer">About</Link>
                         <Link to="menu" spy={true} smooth={true} duration={2000}
-                              className="hover:text-brightColor transition-all duration-300 cursor-pointer">Menu</Link>
+                              className="hover:bg-brightColor text-brightColor hover:text-white py-2 px-3 rounded transition-all duration-300 cursor-pointer">Menu</Link>
                         <Link to="reviews" spy={true} smooth={true} duration={2000}
-                              className="hover:text-brightColor transition-all duration-300 cursor-pointer">Reviews</Link>
+                              className="hover:bg-brightColor text-brightColor hover:text-white py-2 px-3 rounded transition-all duration-300 cursor-pointer">Reviews</Link>
                         <ButtonContact title="Contactez-nous"/>
                     </div>
                 </div>

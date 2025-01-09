@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import img1 from "../assets/images/img1.jpg"
 import img2 from "../assets/images/img2.jpg"
 import img3 from "../assets/images/img3.jpg"
@@ -37,6 +37,14 @@ const Menu = () => {
         },
     ];
 
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+
+        const timeout = setTimeout(() => setIsVisible(true), 1000);
+        return () => clearTimeout(timeout);
+    }, []);
+
     return (
         <div className="bg-gray-100 py-12 px-4 lg:px-24">
             <div className="text-center mb-8">
@@ -47,7 +55,7 @@ const Menu = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {menuItems.map((item) => (
                     <div key={item.id}
-                         className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition-transform duration-700">
+                         className={`bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition-transform duration-[2000ms] ease-out ${ isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'}`}>
                         <img src={item.image} alt={item.name} className="w-full h-auto object-cover"/>
                         <div className="p-4">
                             <h3 className="text-xl font-semibold text-gray-800">{item.name}</h3>
