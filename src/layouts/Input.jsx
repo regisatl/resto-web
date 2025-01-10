@@ -28,9 +28,9 @@ const Input = ({
                 value={value}
                 onChange={onChange}
                 className={`w-full border dark:bg-slate-800 ${
-                    error ? "border-brightColor" : "border-brightColor"
+                    error ? "border-gray-300" : "border-gray-300"
                 } rounded-lg p-3 focus:outline-none focus:ring-2 ${
-                    error ? "focus:ring-brightColor" : "focus:ring-brightColor"
+                    error ? "focus:ring-gray-400" : "focus:ring-gray-400"
                 }`}
             />
             {error && (

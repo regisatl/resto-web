@@ -63,7 +63,7 @@ const Contact = () => {
                             name="comments"
                             placeholder="Write your comments here"
                             rows="5"
-                            className="w-full dark:bg-slate-800 border border-brightColor rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-brightColor"
+                            className="w-full dark:bg-slate-800 border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-gray-400"
                         ></textarea>
                     </div>
                     <Button title="Submit"/>

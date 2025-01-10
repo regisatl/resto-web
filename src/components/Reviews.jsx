@@ -57,7 +57,7 @@ const Reviews = () => {
             <Slider {...settings}>
                 {reviews.map((review) => (
                     <div key={review.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-content-center px-4">
-                        <div className="bg-white dark:bg-slate-800 border h-[300px] w-full rounded-lg p-3">
+                        <div className="bg-white dark:bg-slate-800 border dark:border-slate-800 h-[300px] w-full rounded-lg p-3">
                             <img src={review.avatar} alt={review.name} className="w-20 h-20 rounded-full mb-4"/>
                             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{review.name}</h3>
                             <p className="text-gray-600 dark:text-gray-200 mt-2">{review.feedback}</p>
