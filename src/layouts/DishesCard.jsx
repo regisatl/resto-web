@@ -13,7 +13,7 @@ const DishesCard = (props) => {
 
     return (
         <div
-            className={`pb-5 rounded-t-lg shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg transform transition-all duration-[2000ms] ease-out ${
+            className={`pb-5 rounded-t-lg dark:bg-slate-800 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg transform transition-all duration-[2000ms] ease-out ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
             }`}
         >
@@ -26,8 +26,8 @@ const DishesCard = (props) => {
                     alt="img"
                 />
                 <div className="space-y-4 px-6 pt-6">
-                    <h3 className="font-semibold text-xl">{props.title}</h3>
-                    <div className="flex items-center space-x-1 rtl:space-x-reverse">
+                    <h3 className="font-semibold text-xl dark:text-gray-200">{props.title}</h3>
+                    <div className="flex items-center space-x-5 rtl:space-x-reverse">
                         <div className="flex flex-row">
                             <BsStarFill className="text-brightColor"/>
                             <BsStarFill className="text-brightColor"/>
@@ -38,7 +38,7 @@ const DishesCard = (props) => {
                         <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
                     </div>
                     <div className="flex flex-row items-center justify-between">
-                        <h3 className="font-semibold text-lg">{props.price}</h3>
+                        <h3 className="font-semibold text-lg dark:text-gray-200">{props.price}</h3>
                         <Button title="Buy Now"/>
                     </div>
                 </div>

@@ -7,9 +7,9 @@ const About = () => {
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-8 about-image">
             <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
-                <div className="p-6">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-4">Why Choose Us?</h2>
-                    <p className="text-gray-600 leading-relaxed mb-4">
+                <div className="p-6 dark:bg-slate-800">
+                    <h2 className="text-2xl font-bold text-gray-800 mb-4 dark:text-gray-200">Why Choose Us?</h2>
+                    <p className="text-gray-600 leading-relaxed mb-4 dark:text-gray-200">
                         At Resto Web, we pride ourselves on delivering exceptional services tailored to meet
                         your unique needs. Our team of dedicated professionals ensures a seamless and satisfying
                         experience,
@@ -17,7 +17,7 @@ const About = () => {
                         innovation,
                         reliability, or expertise, we've got you covered.
                     </p>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed dark:text-gray-200">
                         We go above and beyond to exceed expectations, using state-of-the-art technology and industry
                         best practices.
                         Choose us for our commitment to excellence, our passion for innovation, and our unwavering focus

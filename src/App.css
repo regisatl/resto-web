@@ -13,3 +13,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}

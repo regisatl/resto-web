@@ -30,14 +30,13 @@ const Contact = () => {
 
     return (
         <>
-
-            <div className="m-12">
+            <div className="dark:bg-slate-900 py-8">
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-gray-800 mb-2">Contact-Us</h2>
-                    <p className="text-gray-600">Explore our carefully crafted dishes, made with love and the finest
+                    <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2">Contact-Us</h2>
+                    <p className="text-gray-600 dark:text-gray-200">Explore our carefully crafted dishes, made with love and the finest
                         ingredients.</p>
                 </div>
-                <form className="md:max-w-2xl lg:max-w-3xl mx-auto p-4 border rounded-lg shadow-md" onSubmit={handleSubmit}>
+                <form className="md:max-w-2xl lg:max-w-3xl mx-auto p-4 border dark:border-slate-800 dark:bg-slate-800 dark:shadow-2xl rounded-lg shadow-md" onSubmit={handleSubmit}>
                     <Input
                         id="name"
                         name="name"
@@ -58,13 +57,13 @@ const Contact = () => {
                         error={errors.email}
                     />
                     <div className="mb-5">
-                        <label htmlFor="comments" className="block text-gray-700 font-medium mb-2">Comments</label>
+                        <label htmlFor="comments" className="block text-gray-700 dark:text-gray-200 font-medium mb-2">Comments</label>
                         <textarea
                             id="comments"
                             name="comments"
                             placeholder="Write your comments here"
                             rows="5"
-                            className="w-full border border-brightColor rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-brightColor"
+                            className="w-full dark:bg-slate-800 border border-brightColor rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-brightColor"
                         ></textarea>
                     </div>
                     <Button title="Submit"/>

@@ -49,18 +49,18 @@ const Reviews = () => {
     };
 
     return (
-        <div className="bg-gray-100 py-12 px-4 lg:px-24">
+        <div className="bg-gray-100 dark:bg-slate-900 py-12 px-4 lg:px-24">
             <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-gray-800 mb-2">What Our Customers Say</h2>
-                <p className="text-gray-600">Real stories from our happy customers.</p>
+                <h2 className="text-3xl font-bold text-gray-800 mb-2 dark:text-gray-200">What Our Customers Say</h2>
+                <p className="text-gray-600 dark:text-gray-200">Real stories from our happy customers.</p>
             </div>
             <Slider {...settings}>
                 {reviews.map((review) => (
                     <div key={review.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-content-center px-4">
-                        <div className="bg-white h-[300px] w-full rounded-lg p-3">
+                        <div className="bg-white dark:bg-slate-800 border h-[300px] w-full rounded-lg p-3">
                             <img src={review.avatar} alt={review.name} className="w-20 h-20 rounded-full mb-4"/>
-                            <h3 className="text-lg font-semibold text-gray-800">{review.name}</h3>
-                            <p className="text-gray-600 mt-2">{review.feedback}</p>
+                            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">{review.name}</h3>
+                            <p className="text-gray-600 dark:text-gray-200 mt-2">{review.feedback}</p>
                             <div className="flex items-center mt-4">
                                 {Array.from({length: review.rating}).map((_, i) => (
                                     <span key={i} className="text-yellow-400 text-xl">★</span>

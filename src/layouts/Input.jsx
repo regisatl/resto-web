@@ -15,7 +15,7 @@ const Input = ({
             {label && (
                 <label
                     htmlFor={id}
-                    className="block text-gray-700 font-medium mb-2"
+                    className="block text-gray-700 dark:text-gray-200 font-medium mb-2"
                 >
                     {label}
                 </label>
@@ -27,7 +27,7 @@ const Input = ({
                 placeholder={placeholder}
                 value={value}
                 onChange={onChange}
-                className={`w-full border ${
+                className={`w-full border dark:bg-slate-800 ${
                     error ? "border-brightColor" : "border-brightColor"
                 } rounded-lg p-3 focus:outline-none focus:ring-2 ${
                     error ? "focus:ring-brightColor" : "focus:ring-brightColor"

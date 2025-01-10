@@ -11,8 +11,8 @@ const Dishes = () => {
 
     return (
         <>
-            <div className="flex flex-col justify-center px-5 mb-5 lg:px-72">
-                <h1 className="text-4xl font-semibold text-center pt-24 pb-10">Our Dishes</h1>
+            <div className="flex flex-col justify-center px-5 mb-5 lg:px-72 dark:bg-slate-900">
+                <h1 className="text-4xl font-semibold text-center pt-10 pb-10 dark:text-gray-200">Our Dishes</h1>
                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                    <DishesCard img={img1} title="Spaghetti Carbonara" price="$10.99"/>
                    <DishesCard img={img2} title="Caesar Salad" price="$10.99"/>
