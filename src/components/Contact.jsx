@@ -3,7 +3,7 @@ import Input from '../layouts/Input.jsx';
 import Button from "../layouts/Button.jsx";
 
 
-const Contact = () => {
+const       Contact = () => {
 
     const [formData, setFormData] = useState({name: "", email: ""});
     const [errors, setErrors] = useState({});
